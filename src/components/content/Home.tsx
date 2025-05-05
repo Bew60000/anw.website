@@ -11,7 +11,7 @@ export default function Home() {
       <img
         src="/images/Portfolio.png"
         alt={namePortfolio}
-        className="hidden md:block w-64 h-64 lg:w-84 lg:h-84 object-cover rounded-2xl"
+        className="w-64 h-64 lg:w-84 lg:h-84 object-cover rounded-2xl"
       />
 
       <motion.div
