@@ -15,7 +15,7 @@ export const skills = {
   UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS"],
   version_control: ["Git", "Git Control", "GitHub", "GitLab"],
   tools: ["VS Code", "Figma", "Milo"],
-  database: ["MySQL"],
+  database: ["PostgreSQL"],
 };
 
 export const experienceInfo = [
