@@ -11,7 +11,7 @@ export const descriptionSkill =
 
 export const skills = {
   framework: ["NextJS", " ReactJS", "ExpressJS"],
-  languages: ["JavaScript", "TypeScript"],
+  languages: ["JavaScript", "TypeScript", "SQL"],
   UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS"],
   version_control: ["Git", "Git Control", "GitHub", "GitLab"],
   tools: ["VS Code", "Figma", "Milo"],
