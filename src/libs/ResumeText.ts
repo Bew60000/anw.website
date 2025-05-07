@@ -10,7 +10,7 @@ export const descriptionSkill =
   "Below are the core skills I’ve developed and regularly use in web development—from programming languages and frameworks to styling tools and version control. These skills enable me to build efficient, visually engaging, and user-friendly web applications.";
 
 export const skills = {
-  framework: ["NextJS", " ReactJS"],
+  framework: ["NextJS", " ReactJS", "ExpressJS"],
   languages: ["JavaScript", "TypeScript"],
   UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS"],
   version_control: ["Git", "Git Control", "GitHub", "GitLab"],
