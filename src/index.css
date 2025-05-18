@@ -1,6 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-xs: 100px;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+  }
+
+  --animate-orbit: orbit 6s linear infinite;
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(80px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    }
+  }
+
+  --animate-orbit: orbit 6s linear infinite;
+
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(80px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    }
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.1;
+    }
+  }
+}
+
 body {
   font-family: "Fira Code", monospace;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1e1e1e; /* สีพื้นหลังแถบ */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #a21caf; /* สี scrollbar (fuchsia) */
+    border-radius: 10px;
+    border: 2px solid #1e1e1e; /* ขอบเพื่อให้ดูมี padding */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #c026d3;
+  }
 }

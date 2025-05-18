@@ -1,4 +1,5 @@
 import { description_Hi, namePortfolio } from "../../libs/ResumeText";
+import Typewriter from "../Effect/Typewriter";
 import BoxText from "../text-layout-size/BoxText";
 import { motion } from "framer-motion";
 
@@ -9,7 +10,7 @@ export default function Home() {
       className="mt-19 flex scroll-mt-19 flex-col items-center justify-center gap-8 rounded-xl px-6 py-12 xl:flex-row"
     >
       <img
-        src="/images/Portfolio.png"
+        src="/images/Portfolio.jpg"
         alt={namePortfolio}
         className="h-64 w-64 rounded-2xl object-cover lg:h-84 lg:w-84"
       />
@@ -24,9 +25,12 @@ export default function Home() {
           <h1 className="mb-2 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
             {namePortfolio}
           </h1>
-          <p className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl">
-            &gt; Front-end developer
-          </p>
+          <Typewriter
+            className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl"
+            text="&gt; Front-end developer"
+            speed={100}
+            pause={1500}
+          />
           <div className="text-sm">"{description_Hi}"</div>
         </div>
       </motion.div>
