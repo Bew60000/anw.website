@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <BoxText
       id="home"
-      className="mt-19 bg-white/4 flex flex-col xl:flex-row items-center justify-center gap-8 px-6 py-12 rounded-xl scroll-mt-19"
+      className="mt-19 flex scroll-mt-19 flex-col items-center justify-center gap-8 rounded-xl px-6 py-12 xl:flex-row"
     >
       <img
         src="/images/Portfolio.png"
         alt={namePortfolio}
-        className="w-64 h-64 lg:w-84 lg:h-84 object-cover rounded-2xl"
+        className="h-64 w-64 rounded-2xl object-cover lg:h-84 lg:w-84"
       />
 
       <motion.div
@@ -19,15 +19,15 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }} // ลอยขึ้นมา
         transition={{ duration: 1 }} // เวลา 0.6 วิ
       >
-        <div className="text-center md:text-left p-4 md:p-8 max-w-xl">
+        <div className="max-w-xl p-4 text-center md:p-8 md:text-left">
           <p className="text-gray-400">// Hi all. I am</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+          <h1 className="mb-2 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
             {namePortfolio}
           </h1>
-          <p className="text-cyan-500 font-extrabold text-lg sm:text-xl mb-6">
+          <p className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl">
             &gt; Front-end developer
           </p>
-          <div className="text-sm ">"{description_Hi}"</div>
+          <div className="text-sm">"{description_Hi}"</div>
         </div>
       </motion.div>
     </BoxText>

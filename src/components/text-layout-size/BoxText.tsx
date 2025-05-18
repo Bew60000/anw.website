@@ -11,7 +11,7 @@ export default function BoxText({ children, id, className }: BoxTextProps) {
     <div
       id={id}
       className={cn(
-        "text-white bg-white/3 rounded-xl p-5 w-full scroll-smooth",
+        "text-white border border-white/15 rounded-xl p-5 w-full scroll-smooth",
         className
       )}
     >
