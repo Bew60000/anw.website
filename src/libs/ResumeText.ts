@@ -40,7 +40,7 @@ export const experience = [
       "WordPress",
       "PHP",
       "SQL",
-      "SAP",
+      "SAP",  
       "Microsoft SQL",
       "Docker",
     ],
