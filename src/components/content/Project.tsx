@@ -3,7 +3,7 @@ import { projectsTitle } from "../../libs/Title";
 import BoxText from "../share/BoxText";
 import TitleText from "../share/TitleText";
 
-import { descriptions } from "../../libs/ResumeText";
+import { descriptions } from "../../libs/Resume";
 import { projects } from "../../libs/Projects";
 
 export default function Project() {

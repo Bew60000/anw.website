@@ -1,6 +1,6 @@
 import BoxText from "../share/BoxText";
 import TitleText from "../share/TitleText";
-import { descriptions } from "../../libs/ResumeText";
+import { descriptions } from "../../libs/Resume";
 import { aboutTitle } from "../../libs/Title";
 
 import { hobbies } from "../../libs/Hobby";

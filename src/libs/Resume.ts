@@ -37,12 +37,8 @@ export const experience = [
       "TailwindCSS",
       "TypeScript",
       "JavaScript",
-      "WordPress",
-      "PHP",
       "SQL",
-      "SAP",  
       "Microsoft SQL",
-      "Docker",
     ],
   },
   {

@@ -1,5 +1,5 @@
 import { contactInfo } from "../../libs/Contact";
-import { namePortfolio } from "../../libs/ResumeText";
+import { namePortfolio } from "../../libs/Resume";
 import TypewriterEffect from "../Effect/Typewriter-effect";
 import BoxText from "../share/BoxText";
 

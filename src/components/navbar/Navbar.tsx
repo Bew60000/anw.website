@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { namePortfolio } from "../../libs/ResumeText";
+import { namePortfolio } from "../../libs/Resume";
 import { cn } from "../../libs/utils";
 
 const sections = ["home", "skill", "projects", "contact"];

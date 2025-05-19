@@ -1,4 +1,4 @@
-import { educations } from "../../libs/ResumeText";
+import { educations } from "../../libs/Resume";
 import { educationTitle } from "../../libs/Title";
 import BoxText from "../share/BoxText";
 import TitleText from "../share/TitleText";

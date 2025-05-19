@@ -1,4 +1,4 @@
-import { descriptions, namePortfolio } from "../../libs/ResumeText";
+import { descriptions, namePortfolio } from "../../libs/Resume";
 import BoxText from "../share/BoxText";
 import { motion } from "framer-motion";
 import TypewriterEffect from "../Effect/Typewriter-effect";

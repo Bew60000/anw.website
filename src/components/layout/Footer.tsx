@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLine,
 } from "react-icons/fa";
-import { namePortfolio } from "../../libs/ResumeText";
+import { namePortfolio } from "../../libs/Resume";
 
 export default function Footer() {
   return (
