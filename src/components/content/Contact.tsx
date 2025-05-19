@@ -1,7 +1,7 @@
 import { contactInfo } from "../../libs/Contact";
 import { namePortfolio } from "../../libs/ResumeText";
 import BoxText from "../share/BoxText";
-import Typewriter from "../effect/Typewriter.tsx";
+import TypewriterEffect from "../effect/Typewriter-effect";
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
           {namePortfolio}
         </p>
 
-        <Typewriter
+        <TypewriterEffect
           className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl"
           text="&gt; Contact for Me"
           speed={150}

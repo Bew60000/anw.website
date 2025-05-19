@@ -8,7 +8,7 @@ type TypewriterProps = {
   className?: string;
 };
 
-export default function Typewriter({
+export default function TypewriterEffect({
   text,
   speed,
   pause,

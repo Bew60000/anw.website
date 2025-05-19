@@ -1,5 +1,5 @@
 import { descriptions, namePortfolio } from "../../libs/ResumeText";
-import Typewriter from "../effect/Typewriter.tsx";
+import TypewriterEffect from "../effect/Typewriter-effect";
 import BoxText from "../share/BoxText";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className="mb-2 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
             {namePortfolio}
           </h1>
-          <Typewriter
+          <TypewriterEffect
             className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl"
             text="&gt; Front-end developer"
             speed={100}

@@ -2,7 +2,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-export default function Background({ children }: Props) {
+export default function BackgroundEffect({ children }: Props) {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black text-white">
 
