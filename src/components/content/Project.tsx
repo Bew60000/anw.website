@@ -8,7 +8,7 @@ import { projects } from "../../libs/Projects";
 
 export default function Project() {
   return (
-    <BoxText id="projects" className="scroll-mt-19">
+    <BoxText id="projects" className="scroll-mt-20">
       <TitleText>{projectsTitle}</TitleText>
 
       {/* Project Description */}

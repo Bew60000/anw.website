@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <BoxText
       id="home"
-      className="mt-19 flex scroll-mt-19 flex-col items-center justify-center gap-8 rounded-xl px-6 py-12 xl:flex-row"
+      className="mt-20 flex scroll-mt-20 flex-col items-center justify-center gap-8 rounded-xl px-6 py-12 xl:flex-row"
     >
       <img
         src="/images/Portfolio.jpg"

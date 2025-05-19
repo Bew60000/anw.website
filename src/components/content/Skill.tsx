@@ -5,7 +5,7 @@ import TitleText from "../share/TitleText";
 
 export default function Skill() {
   return (
-    <BoxText id="skill" className="scroll-mt-19">
+    <BoxText id="skill" className="scroll-mt-20">
       <TitleText>{skillsTitle}</TitleText>
       {/* Skill Description */}
       <div className="mx-6 mb-6">

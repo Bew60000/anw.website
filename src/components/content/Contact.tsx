@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <BoxText
       id="contact"
-      className="flex scroll-mt-19 flex-col items-center justify-center gap-8 rounded-xl bg-white/4 px-6 py-12 lg:flex-row"
+      className="flex scroll-mt-20 flex-col items-center justify-center gap-8 rounded-xl bg-white/4 px-6 py-12 lg:flex-row"
     >
       <div className="max-w-xl p-4 text-center md:p-8 md:text-left">
         <p className="text-gray-400">//Contact click</p>
