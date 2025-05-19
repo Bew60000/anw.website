@@ -1,7 +1,7 @@
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Content from "./components/layout/Content";
-import BackgroundEffect from "./components/effect/Background-effect";
+import BackgroundEffect from "./components/Effect/Background-effect";
 
 
 function App() {
