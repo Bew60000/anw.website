@@ -1,7 +1,7 @@
 import { contactInfo } from "../../libs/Contact";
 import { namePortfolio } from "../../libs/ResumeText";
-import BoxText from "../share/BoxText";
 import TypewriterEffect from "../effect/Typewriter-effect";
+import BoxText from "../share/BoxText";
 
 export default function Contact() {
   return (
