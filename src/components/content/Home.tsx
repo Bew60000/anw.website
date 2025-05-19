@@ -1,7 +1,7 @@
 import { descriptions, namePortfolio } from "../../libs/ResumeText";
-import TypewriterEffect from "../effect/Typewriter-effect";
 import BoxText from "../share/BoxText";
 import { motion } from "framer-motion";
+import TypewriterEffect from "../effect/Typewriter-effect";
 
 export default function Home() {
   return (

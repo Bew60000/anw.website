@@ -27,7 +27,7 @@ export default function Contact() {
             <div key={v}>
               <p>{label}</p>
               <p>
-                <span className="text-green-400">const</span> {v} ={" "}
+                <span className="text-green-400">const</span> {v} =
                 {link ? (
                   <a href={link} className={`text-${color} break-all`}>
                     {value}
