@@ -25,7 +25,7 @@ export default function Project() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="rounded-2xl border border-fuchsia-500/20 p-4 shadow transition hover:scale-105 hover:border-2 hover:border-fuchsia-600 hover:shadow-lg hover:bg-white/3"
+            className="rounded-2xl border border-fuchsia-500/20 p-4 shadow transition hover:scale-105 hover:border-1 hover:border-fuchsia-600 hover:bg-white/3 hover:p-3 hover:shadow-lg"
           >
             <img
               src={project.image}
@@ -34,7 +34,9 @@ export default function Project() {
             />
 
             <p className="my-2 text-lg font-semibold">{project.title}</p>
-            <p className="mb-2 text-sm text-gray-400 line-clamp-2">{project.description}</p>
+            <p className="mb-2 line-clamp-2 text-sm text-gray-400">
+              {project.description}
+            </p>
             <div className="mb-2 flex flex-wrap gap-2">
               {project.techStack.map((tech) => (
                 <span
