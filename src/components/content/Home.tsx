@@ -1,5 +1,5 @@
 import { descriptions, namePortfolio } from "../../libs/ResumeText";
-import Typewriter from "../effect/Typewriter";
+import Typewriter from "../effect/Typewriter.tsx";
 import BoxText from "../share/BoxText";
 import { motion } from "framer-motion";
 
