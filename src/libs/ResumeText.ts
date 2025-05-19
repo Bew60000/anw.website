@@ -1,13 +1,20 @@
 export const namePortfolio = "Nattapon Wattasok";
 
-export const description_Hi =
-  "Front-end developer with a strong foundation in React and Next.js, and hands-on experience with TypeScript and Tailwind CSS. Enthusiastic about continuous learning and committed to building intuitive, high-quality web applications that solve real-world problems.";
+export const descriptions = [
+  {
+    Welcome:
+      "Front-end developer with a strong foundation in React and Next.js, and hands-on experience with TypeScript and Tailwind CSS. Enthusiastic about continuous learning and committed to building intuitive, high-quality web applications that solve real-world problems.",
 
-export const descriptionAboutMe =
-  "Hi! I’m a Front-End Developer with a passion for designing and building beautiful, user-friendly websites. My journey started with writing HTML, and over time, I’ve honed my skills to create sites that are both visually appealing and functional. Outside of work, I enjoy photography, gaming, and exploring new places with friends — always looking for fresh inspiration and new experiences.";
+    AboutMe:
+      "Hi! I’m a Front-End Developer with a passion for designing and building beautiful, user-friendly websites. My journey started with writing HTML, and over time, I’ve honed my skills to create sites that are both visually appealing and functional. Outside of work, I enjoy photography, gaming, and exploring new places with friends — always looking for fresh inspiration and new experiences.",
 
-export const descriptionSkill =
-  "Below are the core skills I’ve developed and regularly use in web development—from programming languages and frameworks to styling tools and version control. These skills enable me to build efficient, visually engaging, and user-friendly web applications.";
+    Skill:
+      "Below are the core skills I’ve developed and regularly use in web development—from programming languages and frameworks to styling tools and version control. These skills enable me to build efficient, visually engaging, and user-friendly web applications.",
+
+    Project:
+      "Below are some of the projects I’ve designed and developed, showcasing my skills in technologies like React, Next.js, TypeScript, and Tailwind CSS. Each project reflects my passion for creating user-friendly and visually appealing web applications.",
+  },
+];
 
 export const skills = {
   framework: ["NextJS", " ReactJS", "ExpressJS"],
@@ -18,7 +25,26 @@ export const skills = {
   database: ["MySQL"],
 };
 
-export const experienceInfo = [
+export const experience = [
+  {
+    start: "MAR 2025",
+    end: "NOW",
+    company: "Ditto (Thailand) PCL.",
+    position: "IT Developer",
+    skills: [
+      "ReactJS",
+      "Vite",
+      "TailwindCSS",
+      "TypeScript",
+      "JavaScript",
+      "WordPress",
+      "PHP",
+      "SQL",
+      "SAP",
+      "Microsoft SQL",
+      "Docker",
+    ],
+  },
   {
     start: "NOV 2024",
     end: "MAR 2025",

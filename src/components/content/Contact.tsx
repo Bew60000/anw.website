@@ -1,23 +1,28 @@
 import { contactInfo } from "../../libs/Contact";
 import { namePortfolio } from "../../libs/ResumeText";
-import BoxText from "../text-layout-size/BoxText";
+import Typewriter from "../effect/Typewriter";
+import BoxText from "../share/BoxText";
 
 export default function Contact() {
   return (
     <BoxText
       id="contact"
-      className="bg-white/4 flex flex-col lg:flex-row items-center justify-center gap-8 px-6 py-12 rounded-xl scroll-mt-19"
+      className="flex scroll-mt-19 flex-col items-center justify-center gap-8 rounded-xl bg-white/4 px-6 py-12 lg:flex-row"
     >
-      <div className="text-center md:text-left p-4 md:p-8 max-w-xl">
+      <div className="max-w-xl p-4 text-center md:p-8 md:text-left">
         <p className="text-gray-400">//Contact click</p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+        <p className="mb-2 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
           {namePortfolio}
-        </h1>
-        <p className="text-cyan-500 font-extrabold text-lg sm:text-xl mb-6">
-          &gt; Front-end developer
         </p>
 
-        <div className="text-sm text-gray-300 space-y-4">
+        <Typewriter
+          className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl"
+          text="&gt; Contact for Me"
+          speed={150}
+          pause={1500}
+        />
+
+        <div className="space-y-4 text-sm text-gray-300">
           {contactInfo.map(({ label, var: v, value, color, link }) => (
             <div key={v}>
               <p>{label}</p>

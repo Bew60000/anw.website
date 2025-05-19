@@ -1,7 +1,7 @@
-import { experienceInfo } from "../../libs/ResumeText";
+import { experience } from "../../libs/ResumeText";
 import { experienceTitle } from "../../libs/Title";
-import BoxText from "../text-layout-size/BoxText";
-import TitleText from "../text-layout-size/TitleText";
+import BoxText from "../share/BoxText";
+import TitleText from "../share/TitleText";
 
 export default function Experiences() {
   return (
@@ -11,7 +11,7 @@ export default function Experiences() {
       <div className="relative pl-20">
         <div className="absolute left-[62px] top-[12px] bottom-0 w-[2px] bg-gray-300" />
 
-        {experienceInfo.map((experience, index) => (
+        {experience.map((experience, index) => (
           <div key={index} className="mb-8 relative">
             <div className="absolute -left-[23px] top-1.5 w-3 h-3 bg-fuchsia-500 rounded-full border-2 shadow z-10" />
 

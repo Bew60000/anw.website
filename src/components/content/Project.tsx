@@ -1,35 +1,45 @@
 import { Github, Lock } from "lucide-react";
 import { projectsTitle } from "../../libs/Title";
-import BoxText from "../text-layout-size/BoxText";
-import TitleText from "../text-layout-size/TitleText";
-import { descriptionProject, projects } from "../../libs/ProjectInfo";
+import BoxText from "../share/BoxText";
+import TitleText from "../share/TitleText";
+
+import { descriptions } from "../../libs/ResumeText";
+import { projects } from "../../libs/Projects";
 
 export default function Project() {
   return (
     <BoxText id="projects" className="scroll-mt-19">
       <TitleText>{projectsTitle}</TitleText>
 
-      <div className="text-sm mx-6 mb-6">{descriptionProject}</div>
+      {/* Project Description */}
+      <div className="mx-6 mb-6 text-sm">
+        {descriptions.map((description, index) => (
+          <p key={index} className="text-[14px]">
+            {description.Project}
+          </p>
+        ))}
+      </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      {/* Project Card */}
+      <div className="grid gap-6 md:grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="border border-fuchsia-500/20 hover:border-2 hover:border-fuchsia-600 rounded-2xl p-4 shadow hover:shadow-lg hover:scale-105 transition"
+            className="rounded-2xl border border-fuchsia-500/20 p-4 shadow transition hover:scale-105 hover:border-2 hover:border-fuchsia-600 hover:shadow-lg hover:bg-white/3"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="h-48 w-full object-cover"
             />
 
-            <p className="text-lg font-semibold my-2">{project.title}</p>
-            <p className="text-sm text-gray-400 mb-2">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mb-2">
+            <p className="my-2 text-lg font-semibold">{project.title}</p>
+            <p className="mb-2 text-sm text-gray-400 line-clamp-2">{project.description}</p>
+            <div className="mb-2 flex flex-wrap gap-2">
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-fuchsia-600 text-sm px-2 py-1 rounded-full"
+                  className="rounded-full bg-fuchsia-600 px-2 py-1 text-sm hover:bg-fuchsia-700"
                 >
                   {tech}
                 </span>
@@ -40,14 +50,14 @@ export default function Project() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-white transition pt-2"
+                className="inline-flex items-center gap-1 pt-2 text-sm text-gray-500 transition hover:text-white"
               >
-                <Github className="w-4 h-4" />
+                <Github className="h-4 w-4" />
                 View on GitHub
               </a>
             ) : (
               <div className="inline-flex items-center gap-1 text-sm text-gray-400">
-                <Lock className="w-4 h-4" />
+                <Lock className="h-4 w-4" />
                 Private
               </div>
             )}

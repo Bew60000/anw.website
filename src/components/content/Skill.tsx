@@ -1,29 +1,36 @@
-import { descriptionSkill, skills } from "../../libs/ResumeText";
+import { descriptions, skills } from "../../libs/ResumeText";
 import { skillsTitle } from "../../libs/Title";
-import BoxText from "../text-layout-size/BoxText";
-import TitleText from "../text-layout-size/TitleText";
+import BoxText from "../share/BoxText";
+import TitleText from "../share/TitleText";
 
 export default function Skill() {
   return (
     <BoxText id="skill" className="scroll-mt-19">
       <TitleText>{skillsTitle}</TitleText>
+      {/* Skill Description */}
+      <div className="mx-6 mb-6">
+        {descriptions.map((description, index) => (
+          <p key={index} className="text-[14px]">
+            {description.Skill}
+          </p>
+        ))}
+      </div>
 
-      <div className="text-sm mx-6 mb-6">{descriptionSkill}</div>
-
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 ">
+      {/* Skill Card */}
+      <div className="mt-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}
-            className="bg-white/5 rounded-2xl shadow-md p-6 hover:shadow-xl hover:scale-[1.02] hover:-translate-y-1 transition duration-300 ease-in-out border border-fuchsia-500/20 hover:border-2 hover:border-fuchsia-600"
+            className="rounded-2xl border border-fuchsia-500/20 bg-white/5 p-6 shadow-md transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-[1.02] hover:border-2 hover:border-fuchsia-600 hover:shadow-xl"
           >
-            <h3 className="text-xl font-bold text-white mb-4 border-b-2 border-fuchsia-600 pb-2 capitalize ">
+            <h3 className="mb-4 border-b-2 border-fuchsia-600 pb-2 text-xl font-bold text-white capitalize">
               {category.replace("_", " ")}
             </h3>
             <ul className="flex flex-wrap gap-2">
               {items.map((item) => (
                 <li
                   key={item}
-                  className="bg-fuchsia-600/90 text-white text-sm px-3 py-1 rounded-full font-medium transition hover:bg-fuchsia-700 hover:scale-105"
+                  className="rounded-full bg-fuchsia-600/90 px-3 py-1 text-sm font-medium text-white transition hover:scale-105 hover:bg-fuchsia-700"
                 >
                   {item.trim()}
                 </li>

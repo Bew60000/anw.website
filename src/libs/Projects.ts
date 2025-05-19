@@ -1,6 +1,3 @@
-export const descriptionProject =
-  "Below are some of the projects I’ve designed and developed, showcasing my skills in technologies like React, Next.js, TypeScript, and Tailwind CSS. Each project reflects my passion for creating user-friendly and visually appealing web applications.";
-
 export const projects = [
     {
       title: "Portfolio Website",

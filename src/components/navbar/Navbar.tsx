@@ -46,7 +46,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/15 shadow-lg backdrop-blur-sm">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 text-sm text-teal-400 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 text-sm text-teal-400 sm:px-6 lg:px-8">
         <div className="hidden space-x-4 font-mono md:flex">
           {sections.map((id) => (
             <Link key={id} id={id} />

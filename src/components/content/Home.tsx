@@ -1,6 +1,6 @@
-import { description_Hi, namePortfolio } from "../../libs/ResumeText";
-import Typewriter from "../Effect/Typewriter";
-import BoxText from "../text-layout-size/BoxText";
+import { descriptions, namePortfolio } from "../../libs/ResumeText";
+import Typewriter from "../effect/Typewriter";
+import BoxText from "../share/BoxText";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -31,7 +31,13 @@ export default function Home() {
             speed={100}
             pause={1500}
           />
-          <div className="text-sm">"{description_Hi}"</div>
+          <div className="text-sm">
+            {descriptions.map((description, index) => (
+              <p key={index} className="text-[14px]">
+                {description.Welcome}
+              </p>
+            ))}
+          </div>
         </div>
       </motion.div>
     </BoxText>

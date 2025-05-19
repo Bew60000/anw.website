@@ -1,43 +1,38 @@
-import BoxText from "../text-layout-size/BoxText";
-import TitleText from "../text-layout-size/TitleText";
-import { descriptionAboutMe } from "../../libs/ResumeText";
+import BoxText from "../share/BoxText";
+import TitleText from "../share/TitleText";
+import { descriptions } from "../../libs/ResumeText";
 import { aboutTitle } from "../../libs/Title";
-import { CameraIcon, Gamepad2, Globe } from "lucide-react";
 
-const hobbies = [
-  {
-    icon: <CameraIcon className="text-fuchsia-400 w-8 h-8 mb-2" />,
-    text: "Photography lover – capturing moments and street scenes.",
-  },
-  {
-    icon: <Gamepad2 className="text-fuchsia-400 w-8 h-8 mb-2" />,
-    text: "Gamers – Enjoy MOBA games, games with friends and story games.",
-  },
-  {
-    icon: <Globe className="text-fuchsia-400 w-8 h-8 mb-2" />,
-    text: "Explorer – discovering new places and cultures.",
-  },
-];
+import { hobbies } from "../../libs/Hobby";
 
 export default function AboutMe() {
   return (
     <BoxText>
       <TitleText>{aboutTitle}</TitleText>
 
-      <div className="bg-white/5 border border-fuchsia-500/30 p-6 rounded-xl text-sm text-gray-200 leading-relaxed mx-6 shadow-inner hover:shadow-md transition-all duration-300">
-        {descriptionAboutMe}
+      {/* AboutMe Description  */}
+      <div className="mx-6 rounded-xl border border-fuchsia-500/30 bg-white/5 p-6 leading-relaxed text-gray-200 shadow-inner transition-all duration-300 hover:shadow-md">
+        {descriptions.map((description, index) => (
+          <p key={index} className="text-[14px]">
+            {description.AboutMe}
+          </p>
+        ))}
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mt-6 mx-6 text-sm text-gray-300">
-        {hobbies.map((hobby, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center bg-white/5 rounded-xl p-4 border border-fuchsia-500/20 hover:border-2 hover:border-fuchsia-500 shadow-md hover:scale-105 transition"
-          >
-            {hobby.icon}
-            <p className="text-center">{hobby.text}</p>
-          </div>
-        ))}
+      {/* ้Hobby */}
+      <div className="mx-6 mt-6 grid gap-6 text-sm text-gray-300 sm:grid-cols-1 md:grid-cols-3">
+        {hobbies.map((hobby, index) => {
+          const Icon = hobby.icon;
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center rounded-xl border border-fuchsia-500/20 p-4 shadow-md transition hover:scale-105 hover:border-2 hover:border-fuchsia-500"
+            >
+              <Icon className="mb-2 h-8 w-8 text-fuchsia-400" />
+              <p className="text-center">{hobby.text}</p>
+            </div>
+          );
+        })}
       </div>
     </BoxText>
   );

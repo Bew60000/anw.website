@@ -1,7 +1,7 @@
 import { educations } from "../../libs/ResumeText";
 import { educationTitle } from "../../libs/Title";
-import BoxText from "../text-layout-size/BoxText";
-import TitleText from "../text-layout-size/TitleText";
+import BoxText from "../share/BoxText";
+import TitleText from "../share/TitleText";
 
 export default function Educations() {
   return (
