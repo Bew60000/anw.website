@@ -46,18 +46,18 @@ export default function Navbar() {
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/15 shadow-lg backdrop-blur-sm">
-      <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-4 text-sm text-teal-400 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-[1100px] items-center justify-between px-4 text-sm text-teal-400 sm:px-6 lg:px-8">
         <div className="hidden space-x-4 font-mono md:flex">
           {sections.map((id) => (
             <Link key={id} id={id} />
           ))}
         </div>
-        <div className="flex items-center gap-3 font-mono text-green-600">
-          <span className="hidden sm:block">{namePortfolio}</span>
+        <div className="flex items-center gap-4 rounded-lg border-[0.5px] border-amber-50/25 px-3 py-1 font-mono text-green-500">
+          <span className="hidden sm:block font-bold">{namePortfolio}</span>
           <img
             src="/images/Portfolio.png"
             alt={namePortfolio}
-            className="h-8 w-8 rounded-full ring-1 ring-teal-500"
+            className="h-8 w-8 rounded-md"
           />
         </div>
         <div className="md:hidden">
