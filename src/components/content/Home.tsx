@@ -10,7 +10,7 @@ export default function Home() {
       className="mt-20 flex scroll-mt-20 flex-col items-center justify-center gap-8 rounded-xl px-6 py-12 xl:flex-row"
     >
       <img
-        src="/images/Portfolio.jpg"
+        src="/images/Portfolio.png"
         alt={namePortfolio}
         className="h-64 w-64 rounded-2xl object-cover lg:h-84 lg:w-84"
       />
