@@ -27,7 +27,7 @@ export const skills = {
 
 export const experience = [
   {
-    start: "MAR 2025",
+    start: "MAY 2025",
     end: "NOW",
     company: "Ditto (Thailand) PCL.",
     position: "IT Developer",
