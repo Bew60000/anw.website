@@ -3,10 +3,10 @@ import { Menu, X } from "lucide-react";
 import { namePortfolio } from "../../libs/Resume";
 import { cn } from "../../libs/utils";
 
-const sections = ["home", "skill", "projects", "contact"];
+const sections = ["about", "skill", "projects", "contact"];
 
 export default function Navbar() {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("about");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {

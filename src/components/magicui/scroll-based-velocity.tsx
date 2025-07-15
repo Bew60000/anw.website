@@ -68,7 +68,7 @@ function ParallaxText({
   const x = useTransform(baseX, (v) => `${wrap(-100 / repetitions, 0, v)}%`);
 
   const directionFactor = React.useRef<number>(1);
-  useAnimationFrame((t, delta) => {
+  useAnimationFrame(( delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
     if (velocityFactor.get() < 0) {
@@ -109,7 +109,7 @@ export function VelocityScroll({
   return (
     <div
       className={cn(
-        "relative w-full text-4xl text-[24px] font-bold tracking-[-0.02em] text-white opacity-20 md:text-[24px] md:leading-[1.5rem]",
+        "relative w-full text-[24px] font-bold tracking-[-0.02em] text-white opacity-20 xs:text-[14px] md:leading-[1.5rem]",
         className,
       )}
       {...props}

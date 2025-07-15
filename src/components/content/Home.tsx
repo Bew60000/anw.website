@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 import TypewriterEffect from "../Effect/Typewriter-effect";
 // import { TerminalDemo } from "../Effect/TerminalDemo";
 // import { MeteorDemo } from "../Effect/MeteorsDemo";
-// import { ScrollBasedVelocityDemo } from "../Effect/ScrollBasedVelocityDemo";
 
 export default function Home() {
   return (
     <BoxText
-      id="home"
+      id="about"
       className="mt-20 flex scroll-mt-20 flex-col items-center justify-center gap-8 rounded-xl px-6 py-12 xl:flex-row"
     >
       <img
