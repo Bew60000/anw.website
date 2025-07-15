@@ -2,9 +2,9 @@ import { descriptions, namePortfolio } from "../../libs/Resume";
 import BoxText from "../share/BoxText";
 import { motion } from "framer-motion";
 import TypewriterEffect from "../Effect/Typewriter-effect";
-import { TerminalDemo } from "../Effect/TerminalDemo";
+// import { TerminalDemo } from "../Effect/TerminalDemo";
 // import { MeteorDemo } from "../Effect/MeteorsDemo";
-import { ScrollBasedVelocityDemo } from "../Effect/ScrollBasedVelocityDemo";
+// import { ScrollBasedVelocityDemo } from "../Effect/ScrollBasedVelocityDemo";
 
 export default function Home() {
   return (
