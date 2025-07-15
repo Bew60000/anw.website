@@ -44,9 +44,8 @@ export default function Home() {
         </div>
       </motion.div>
 
-      <TerminalDemo />
+      {/* <TerminalDemo /> */}
       {/* <MeteorDemo /> */}
-      <ScrollBasedVelocityDemo />
     </BoxText>
   );
 }
