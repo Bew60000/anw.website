@@ -29,7 +29,7 @@ export default function Home() {
           </h1>
           <TypewriterEffect
             className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl"
-            text="&gt; Front-end developer"
+            text="&gt; Full Stack developer"
             speed={100}
             pause={1500}
           />

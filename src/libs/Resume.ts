@@ -3,10 +3,10 @@ export const namePortfolio = "Nattapon Wattasok";
 export const descriptions = [
   {
     Welcome:
-      "Front-end developer with a strong foundation in React and Next.js, and hands-on experience with TypeScript and Tailwind CSS. Enthusiastic about continuous learning and committed to building intuitive, high-quality web applications that solve real-world problems.",
+      "Full Stack Developer experienced in building modern web applications using JavaScript, TypeScript, React, Next.js, and Tailwind CSS for frontend development, and Nest.js, Node.js, and Express.js for backend development. Skilled in database design and management with PostgreSQL, MSSQL, and SQL, and experienced in deployment and process management using PM2. Passionate about delivering scalable, secure, and high-performance solutions.",
 
     AboutMe:
-      "Hi! I’m a Front-End Developer with a passion for designing and building beautiful, user-friendly websites. My journey started with writing HTML, and over time, I’ve honed my skills to create sites that are both visually appealing and functional. Outside of work, I enjoy photography, gaming, and exploring new places with friends — always looking for fresh inspiration and new experiences.",
+      "Hi! I’m a Full Stack Developer passionate about building modern, scalable, and user-friendly web applications. My journey started with writing basic HTML, and I gradually expanded my skills to cover both Frontend and Backend development.On the Frontend, I work with JavaScript, TypeScript, React, Next.js, and Tailwind CSS to create visually appealing and responsive interfaces.On the Backend, I develop systems using Node.js, Express.js, and Nest.js, manage databases including PostgreSQL, MSSQL, MongoDB, and SQL, and have experience with deployment and system management using PM2.",
 
     Skill:
       "Below are the core skills I’ve developed and regularly use in web development—from programming languages and frameworks to styling tools and version control. These skills enable me to build efficient, visually engaging, and user-friendly web applications.",
@@ -17,12 +17,12 @@ export const descriptions = [
 ];
 
 export const skills = {
-  framework: ["NextJS", " ReactJS", "ExpressJS"],
+  framework: ["NextJS", " ReactJS", "ExpressJS", "NestJS"],
   languages: ["JavaScript", "TypeScript", "SQL"],
   UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS"],
   version_control: ["Git", "Git Control", "GitHub", "GitLab"],
-  tools: ["VS Code", "Figma", "Milo"],
-  database: ["PostgreSQL", "MicrosoftSQL"],
+  tools: ["VS Code", "Figma", "Milo", "Thunder Client", "PM2"],
+  database: ["PostgreSQL", "MicrosoftSQL", "MongoDB"],
 };
 
 export const experience = [
@@ -33,11 +33,13 @@ export const experience = [
     position: "IT Developer",
     skills: [
       "ReactJS",
+      "NextJS",
+      "NestJS",
+      "ExpressJS",
       "Vite",
       "TailwindCSS",
       "TypeScript",
       "JavaScript",
-      "Express",
       "SQL",
       "Microsoft SQL",
       "WordPress",
