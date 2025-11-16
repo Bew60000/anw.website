@@ -18,17 +18,36 @@ export const descriptions = [
 
 export const skills = {
   framework: ["NextJS", " ReactJS", "ExpressJS", "NestJS"],
-  languages: ["JavaScript", "TypeScript", "SQL"],
-  UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS"],
-  version_control: ["Git", "Git Control", "GitHub", "GitLab"],
+  languages: ["JavaScript", "TypeScript", "SQL", "SAP ABAP"],
+  UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS", "Shadcn UI"],
+  version_control: ["Git", "Git Control", "GitHub", "GitLab", "Bitbucket"],
   tools: ["VS Code", "Figma", "Milo", "Thunder Client", "PM2"],
-  database: ["PostgreSQL", "MicrosoftSQL", "MongoDB"],
+  database: ["PostgreSQL", "MicrosoftSQL", "MongoDB", "SAP ECC6"],
 };
 
 export const experience = [
   {
-    start: "MAY 2025",
+    start: "OCTOBER 2025",
     end: "NOW",
+    company: "HAAD THIP PUBLIC COMPANY LIMITED",
+    position: "ABAP Developer",
+    skills: [
+      "ReactJS",
+      "NextJS",
+      "NestJS",
+      "ExpressJS",
+      "Vite",
+      "TailwindCSS",
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "Microsoft SQL",
+      "SAP ABAP",
+    ],
+  },
+  {
+    start: "MAY 2025",
+    end: "SEPTEMBER 2025",
     company: "Ditto (Thailand) PCL.",
     position: "IT Developer",
     skills: [
@@ -56,7 +75,7 @@ export const experience = [
     start: "APR 2024",
     end: "JUN 2024",
     company: "Education and Innovative Learning Academy - PSU",
-    position: "Software Developer",
+    position: "Software Developer (Internship)",
     skills: ["ReactJS", "TailwindCSS", "JavaScript"],
   },
 ];
