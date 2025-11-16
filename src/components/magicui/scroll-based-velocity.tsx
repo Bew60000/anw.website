@@ -68,7 +68,7 @@ function ParallaxText({
   const x = useTransform(baseX, (v) => `${wrap(-100 / repetitions, 0, v)}%`);
 
   const directionFactor = React.useRef<number>(1);
-  useAnimationFrame((time, delta) => {
+  useAnimationFrame((delta) => {
     //  console.log("Current animation time:", time);
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
