@@ -1,8 +1,7 @@
-import Footer from "./components/layout/Footer";
+import Footer from "./layout/Footer";
 import Navbar from "./components/navbar/Navbar";
-import Content from "./components/layout/Content";
-import BackgroundEffect from "./components/Effect/Background-effect";
-
+import Content from "./layout/Content";
+import BackgroundEffect from "./components/effect/Background-effect";
 
 function App() {
   return (

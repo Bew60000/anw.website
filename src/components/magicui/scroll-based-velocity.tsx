@@ -78,7 +78,9 @@ function ParallaxText({
       directionFactor.current = 1;
     }
 
-    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    // moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    moveBy = baseVelocity;
+    // moveBy = moveBy + moveBy * velocityFactor.get();
 
     baseX.set(baseX.get() + moveBy);
   });
@@ -101,7 +103,7 @@ function ParallaxText({
 }
 
 export function VelocityScroll({
-  defaultVelocity = 5,
+  defaultVelocity = 0.05,
   numRows = 2,
   children,
   className,
