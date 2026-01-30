@@ -5,7 +5,7 @@ import Experiences from "../components/content/Experiences";
 import Skill from "../components/content/Skill";
 import Project from "../components/content/Project";
 import Contact from "../components/content/Contact";
-import { ScrollBasedVelocityDemo } from "../components/effect/ScrollBasedVelocityDemo";
+import { ScrollBasedVelocityDemo } from "../components/Effect/ScrollBasedVelocityDemo";
 
 export default function Content() {
   return (
