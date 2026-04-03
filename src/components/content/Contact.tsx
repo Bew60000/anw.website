@@ -3,6 +3,10 @@ import { namePortfolio } from "../../libs/Resume";
 import TypewriterEffect from "../Effect/Typewriter-effect";
 import BoxText from "../share/BoxText";
 
+const colorClassMap: Record<string, string> = {
+  "orange-400": "text-orange-400",
+};
+
 export default function Contact() {
   return (
     <BoxText
@@ -29,11 +33,11 @@ export default function Contact() {
               <p>
                 <span className="text-green-400">const</span> {v} =
                 {link ? (
-                  <a href={link} className={`text-${color} break-all`}>
+                  <a href={link} className={`${colorClassMap[color] ?? ""} break-all`}>
                     {value}
                   </a>
                 ) : (
-                  <span className={`text-${color}`}>{value}</span>
+                  <span className={colorClassMap[color] ?? ""}>{value}</span>
                 )}
                 ;
               </p>

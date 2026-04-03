@@ -2,17 +2,22 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { namePortfolio } from "../../libs/Resume";
 import { cn } from "../../libs/utils";
-
-const sections = ["about", "skill", "projects", "contact"];
+import { sections, type SectionId } from "../../libs/sections";
 
 export default function Navbar() {
-  const [active, setActive] = useState("about");
+  const [active, setActive] = useState<SectionId>("about");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) =>
-        entries.forEach((e) => e.isIntersecting && setActive(e.target.id)),
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const id = e.target.id as SectionId;
+          if (sections.includes(id)) {
+            setActive(id);
+          }
+        }),
       { rootMargin: "-40% 0px -50% 0px" },
     );
     sections.forEach((id) => {
@@ -22,7 +27,7 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  const scrollTo = (id: string) => {
+  const scrollTo = (id: SectionId) => {
     setOpen(false);
     setTimeout(
       () => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }),
@@ -30,7 +35,7 @@ export default function Navbar() {
     );
   };
 
-  const Link = ({ id }: { id: string }) => (
+  const Link = ({ id }: { id: SectionId }) => (
     <button
       onClick={() => scrollTo(id)}
       className={cn(

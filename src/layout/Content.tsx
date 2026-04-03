@@ -14,9 +14,9 @@ export default function Content() {
         <Home />
         <AboutMe />
         <Educations />
-        <Experiences />
         <Skill />
         <Project />
+        <Experiences />
         <Contact />
       </div>
       <ScrollBasedVelocityDemo />

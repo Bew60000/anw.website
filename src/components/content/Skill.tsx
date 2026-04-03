@@ -1,7 +1,8 @@
-import { descriptions, skills } from "../../libs/Resume";
+import { skills } from "../../libs/Resume";
 import { skillsTitle } from "../../libs/Title";
 import BoxText from "../share/BoxText";
 import TitleText from "../share/TitleText";
+import DescriptionText from "../share/DescriptionText";
 
 export default function Skill() {
   return (
@@ -9,11 +10,7 @@ export default function Skill() {
       <TitleText>{skillsTitle}</TitleText>
       {/* Skill Description */}
       <div className="mx-6 mb-6">
-        {descriptions.map((description, index) => (
-          <p key={index} className="text-[14px]">
-            {description.Skill}
-          </p>
-        ))}
+        <DescriptionText field="Skill" />
       </div>
 
       {/* Skill Card */}

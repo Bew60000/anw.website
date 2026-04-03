@@ -1,9 +1,8 @@
-import { descriptions, namePortfolio } from "../../libs/Resume";
+import { namePortfolio } from "../../libs/Resume";
 import BoxText from "../share/BoxText";
+import DescriptionText from "../share/DescriptionText";
 import { motion } from "framer-motion";
 import TypewriterEffect from "../Effect/Typewriter-effect";
-// import { TerminalDemo } from "../Effect/TerminalDemo";
-// import { MeteorDemo } from "../Effect/MeteorsDemo";
 
 export default function Home() {
   return (
@@ -29,22 +28,15 @@ export default function Home() {
           </h1>
           <TypewriterEffect
             className="mb-6 text-lg font-extrabold text-cyan-500 sm:text-xl"
-            text="&gt; ABAP Developer And Full Stack Developer"
+            text="&gt; Full Stack Developer"
             speed={100}
             pause={1500}
           />
           <div className="text-sm">
-            {descriptions.map((description, index) => (
-              <p key={index} className="text-[14px]">
-                {description.Welcome}
-              </p>
-            ))}
+            <DescriptionText field="Welcome" />
           </div>
         </div>
       </motion.div>
-
-      {/* <TerminalDemo /> */}
-      {/* <MeteorDemo /> */}
     </BoxText>
   );
 }
