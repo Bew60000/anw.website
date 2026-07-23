@@ -17,11 +17,11 @@ export const descriptions = [
 ];
 
 export const skills = {
-  framework: ["NextJS", " ReactJS", "ExpressJS", "NestJS"],
-  languages: ["JavaScript", "TypeScript", "SQL", "SAP ABAP"],
+  framework: ["NextJS", " ReactJS", "ExpressJS", "NestJS", "Node"],
+  languages: ["JavaScript", "TypeScript", "SQL", "SAP ABAP", "C"],
   UI_styling: ["TailwindCSS", "Tailwind Merge", "HTML", "CSS", "Shadcn UI"],
   version_control: ["Git", "Git Control", "GitHub", "GitLab", "Bitbucket"],
-  tools: ["VS Code", "Figma", "Milo", "Thunder Client", "PM2"],
+  tools: ["VS Code", "Figma", "Milo", "Thunder Client", "PM2", "SAP GUI"],
   database: ["PostgreSQL", "MicrosoftSQL", "MongoDB", "SAP ECC6"],
 };
 
@@ -32,17 +32,13 @@ export const experience = [
     company: "HAAD THIP PUBLIC COMPANY LIMITED",
     position: "ABAP Developer",
     skills: [
-      "ReactJS",
-      "NextJS",
-      "NestJS",
-      "ExpressJS",
-      "Vite",
-      "TailwindCSS",
-      "TypeScript",
-      "JavaScript",
       "SQL",
       "Microsoft SQL",
-      "SAP ABAP",
+      "ABAP SAP",
+      "Functional SAP",
+      "SAP ECC6",
+      "OpenSQL",
+      "C",
     ],
   },
   {

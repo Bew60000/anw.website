@@ -13,10 +13,10 @@ export default function Content() {
       <div className="mx-auto mb-4 flex w-full max-w-[1020px] flex-col gap-4">
         <Home />
         <AboutMe />
-        <Educations />
-        <Skill />
-        <Project />
         <Experiences />
+        <Skill />
+        <Educations />
+        <Project />
         <Contact />
       </div>
       <ScrollBasedVelocityDemo />
